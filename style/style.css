@@ -13,9 +13,43 @@ header .container, main .container, footer .container {
 
 header {
 	background: white;
+	overflow: auto;
+}
+
+/* CSS Lint told me not to qualify any heading elements 
+"their appearance should be consistent across an entire site"
+*/
+h1 {
+	float: left;
+	width: 570px;
+}
+
+header nav {
+	float: right;
+	width: 285px;
 }
 
 main {
 	background: white;
+	overflow: auto;
 }
 
+h2, main p, h3, main ul {
+	float: left;
+	width: 570px;
+}
+
+main img {
+	float: right;
+	width: 285px;
+}
+
+footer .contact {
+	float: left;
+	width: 570px;
+}
+
+footer .sitemap {
+	float: right;
+	width: 285px;
+}
